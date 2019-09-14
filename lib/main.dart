@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_store/screens/home_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,14 +11,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        primaryColor: Color.fromARGB(255, 4, 125, 44)
-        
+        primaryColor: Color.fromARGB(255, 4, 125, 141)        
       ),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(title: Text("Teste"),
-        backgroundColor: Colors.amber,),
-      ),
+      home: HomeScreen()
+      
     );
   }
 }
